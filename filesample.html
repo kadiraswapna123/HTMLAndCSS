@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        CodePen - Demo Flexbox 3
+    </title>
+    <style>
+        body {
+            padding: 2em;
+        }
+
+        .headerContainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: tomato;
+            font-weight: bold;
+            padding: 1opx;
+        }
+
+        .footerContainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: lightgreen;
+            font-weight: bold;
+            padding: 1opx;
+        }
+
+        .mainContainer {
+            display: flex;
+            flex-flow: row wrap;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .mainContentItem {
+            text-align: left;
+            background: deepskyblue;
+        }
+
+        article {
+            padding: 10px;
+            margin: 10px;
+            background: aqua;
+        }
+
+        .sideBarLeftItem {
+            background: gold;
+        }
+
+        .sideBarRightItem {
+            background: hotpink;
+        }
+
+        .sideBarItem {
+            flex: 1 0 0;
+            border: 2px solid green;
+        }
+
+        .mainContentItem {
+            flex: 3 0px;
+        }
+
+        .sideBarLeftItem {
+            order: 1;
+        }
+
+        .sideBarRightItem {
+            order: 3;
+        }
+
+        .mainContentItem {
+            order: 2;
+        }
+  
